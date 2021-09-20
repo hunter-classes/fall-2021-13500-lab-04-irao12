@@ -8,8 +8,12 @@ int main(){
   std::cout << "box(3,5):\n";
   std::cout << result;
   std::cout << "------------------\n";
-  result = box(9,5);
-  std::cout << "box(9,5):\n";
+  result = box(9,6);
+  std::cout << "box(9,6):\n";
+  std::cout << result;
+  std::cout << "------------------\n";
+  result = box(5,9);
+  std::cout << "box(5,9):\n";
   std::cout << result;
   std::cout << "------------------\n";
 
@@ -22,8 +26,16 @@ int main(){
   std::cout << "checkerboard(20, 10):"<< '\n';
   std::cout << result;
   std::cout << "------------------\n";
+  result = checkerboard(8, 15);
+  std::cout << "checkerboard(8, 15):"<< '\n';
+  std::cout << result;
+  std::cout << "------------------\n";
 
   std::cout << "\nTesting Task C: cross" << '\n';
+  result = cross(5);
+  std::cout << "cross(3):" << '\n';
+  std::cout << result;
+  std::cout << "------------------\n";
   result = cross(8);
   std::cout << "cross(8):" << '\n';
   std::cout << result;
@@ -38,6 +50,10 @@ int main(){
   std::cout << "lower(6):" << '\n';
   std::cout << result;
   std::cout << "------------------\n";
+  result = lower(9);
+  std::cout << "lower(9):" << '\n';
+  std::cout << result;
+  std::cout << "------------------\n";
   result = lower(13);
   std::cout << "lower(13):" << '\n';
   std::cout << result;
@@ -46,6 +62,10 @@ int main(){
   std::cout << "\nTesting Task E: upper" << '\n';
   result = upper(5);
   std::cout << "upper(5):" << '\n';
+  std::cout << result;
+  std::cout << "------------------\n";
+  result = upper(8);
+  std::cout << "upper(8):" << '\n';
   std::cout << result;
   std::cout << "------------------\n";
   result = upper(12);
@@ -74,11 +94,16 @@ int main(){
   std::cout << "\nTesting Task G: checkerboard3x3" << '\n';
   result = checkerboard3x3(16, 11);
   std::cout << "checkerboard3x3(16, 11):" << '\n';
-  std::cout << result << '\n';
-  std::cout << "------------------\n";
+  std::cout << result;
+  std::cout << "------------------\n\n";
   result = checkerboard3x3(27, 27);
   std::cout << "checkerboard3x3(27, 27):" << '\n';
-  std::cout << result << '\n';
+  std::cout << result;
+  std::cout << "------------------\n\n";
+  result = checkerboard3x3(14, 8);
+  std::cout << "checkerboard3x3(14, 8):" << '\n';
+  std::cout << result;
   std::cout << "------------------\n";
+
   return 0;
 }
