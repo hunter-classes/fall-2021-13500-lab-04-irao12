@@ -54,3 +54,15 @@ std::string lower (int length){
   }
   return s;
 }
+
+std::string upper (int length){
+  std::string s;
+  for (int i = 0; i < length; i ++){
+    for (int j = 0; j < length; j++){
+      if (j >= i) s += "*";
+      else s += " ";
+    }
+    s += "\n";
+  }
+  return s;
+}

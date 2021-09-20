@@ -38,6 +38,14 @@ int main(){
   result = lower(13);
   std::cout << "lower(13):" << '\n';
   std::cout << result;
-  
+
+  std::cout << "\nTesting Task E: upper" << '\n';
+  result = upper(5);
+  std::cout << "upper(5):" << '\n';
+  std::cout << result;
+  std::cout << "------------------\n";
+  result = upper(12);
+  std::cout << "upper(12):" << '\n';
+  std::cout << result;
   return 0;
 }
