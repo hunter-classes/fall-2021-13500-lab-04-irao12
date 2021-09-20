@@ -72,5 +72,13 @@ int main(){
   std::cout << "------------------\n";
 
   std::cout << "\nTesting Task G: checkerboard3x3" << '\n';
+  result = checkerboard3x3(16, 11);
+  std::cout << "checkerboard3x3(16, 11):" << '\n';
+  std::cout << result << '\n';
+  std::cout << "------------------\n";
+  result = checkerboard3x3(27, 27);
+  std::cout << "checkerboard3x3(27, 27):" << '\n';
+  std::cout << result << '\n';
+  std::cout << "------------------\n";
   return 0;
 }

@@ -13,6 +13,7 @@ std::string box(int width, int height){
   return s;
 }
 
+
 std::string checkerboard(int width, int height){
   std::string s;
   for (int i = 0; i < height; i++){
@@ -32,6 +33,7 @@ std::string checkerboard(int width, int height){
   return s;
 }
 
+
 std::string cross(int size){
   std::string s;
   for (int i = 1; i <= size; i++){
@@ -43,6 +45,7 @@ std::string cross(int size){
   }
   return s;
 }
+
 
 std::string lower (int length){
   std::string s;
@@ -56,6 +59,7 @@ std::string lower (int length){
   return s;
 }
 
+
 std::string upper (int length){
   std::string s;
   for (int i = 0; i < length; i ++){
@@ -68,6 +72,7 @@ std::string upper (int length){
   return s;
 }
 
+
 std::string trapezoid (int width, int height){
   std::string s;
   if (width % 2 == 0 && height > width/2) return "Impossible shape!\n";
@@ -76,6 +81,20 @@ std::string trapezoid (int width, int height){
   for (int i = 0; i < height; i++){
     for (int j = 0; j < width; j++){
       if (j >= i && j < width - i) s += "*";
+      else s += " ";
+    }
+    s += "\n";
+  }
+  return s;
+}
+
+
+std::string checkerboard3x3(int width, int height){
+  std::string s;
+  for (int i = 0 ; i < height; i++){
+    for (int j = 0; j < width; j++){
+      if ((i/3) % 2 == 0 && (j/3) % 2 == 0) s += "*";
+      else if ((i/3) % 2 == 1 && (j/3) % 2 == 1) s += "*";
       else s += " ";
     }
     s += "\n";
