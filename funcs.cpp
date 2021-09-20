@@ -1,6 +1,7 @@
 #include <iostream>
 #include "funcs.h"
 
+
 std::string box(int width, int height){
   std::string s;
   for (int i = 0; i < height; i++){
@@ -60,6 +61,21 @@ std::string upper (int length){
   for (int i = 0; i < length; i ++){
     for (int j = 0; j < length; j++){
       if (j >= i) s += "*";
+      else s += " ";
+    }
+    s += "\n";
+  }
+  return s;
+}
+
+std::string trapezoid (int width, int height){
+  std::string s;
+  if (width % 2 == 0 && height > width/2) return "Impossible shape!\n";
+  else if (width % 2 != 0 && height > (width / 2 + 1)) return "Impossible shape!\n";
+
+  for (int i = 0; i < height; i++){
+    for (int j = 0; j < width; j++){
+      if (j >= i && j < width - i) s += "*";
       else s += " ";
     }
     s += "\n";
