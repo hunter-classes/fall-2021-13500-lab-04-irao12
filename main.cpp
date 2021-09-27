@@ -33,7 +33,7 @@ int main(){
 
   std::cout << "\nTesting Task C: cross" << '\n';
   result = cross(5);
-  std::cout << "cross(3):" << '\n';
+  std::cout << "cross(5):" << '\n'; //
   std::cout << result;
   std::cout << "------------------\n";
   result = cross(8);
@@ -78,8 +78,8 @@ int main(){
   std::cout << "trapezoid(12, 5):" << '\n';
   std::cout << result;
   std::cout << "------------------\n";
-  result = trapezoid(7, 4);
-  std::cout << "trapezoid(7, 3):" << '\n';
+  result = trapezoid(7, 4); //
+  std::cout << "trapezoid(7, 4):" << '\n';
   std::cout << result;
   std::cout << "------------------\n";
   result = trapezoid(12, 7);
